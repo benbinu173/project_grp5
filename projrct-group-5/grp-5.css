@@ -1,0 +1,143 @@
+*{
+    font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+ 
+}
+
+
+body{
+    background-image: url('./media/vegetables-space-top.jpg'); /* Replace with your image */
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    width: 100%; /* Make the container responsive */
+    height: 500vh; /* Set container height to fill the viewport */
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#heading{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s ease;
+    
+}
+
+#heading:hover{
+    color: #00CED1;
+
+}
+
+#section-1{
+    width: 100%; /* Ensure the container spans the full width */
+    height: 728px; /* Set a fixed or relative height */
+    background-image: url('./media/pexels-janetrangdoan-1099680.jpg'); /* Replace with your image path */
+    background-size: cover; /* Scales the image to cover the container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+ 
+    background-color: rgba(0, 0, 0, 0.619);
+    background-blend-mode:color-burn;
+    color: white;
+}
+
+#rest-name,#all-local,#search{
+    border: 2px solid #ccc; /* Optional: Add a border */
+    border-radius: 30px; /* Adjust for desired roundness */
+    padding: 10px 15px;
+    outline: none; /* Remove default focus outline */
+    font-size: 16px; /* Improve readability */
+    width: 350px;
+}
+
+#rest-name:hover{
+    border-color: #007bff; /* Optional: Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional: Add a glow effect */
+}
+
+#all-local:hover{
+    border-color: #007bff; /* Optional: Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional: Add a glow effect */
+}
+
+#search:hover{
+    border-color: #007bff; /* Optional: Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional: Add a glow effect */
+    background-color: #007bff; /* Initial background color */
+    color: white; /* Text color */
+    border: 2px solid #ccc; /* Optional: Add a border */
+    border-radius: 30px; /* Adjust for desired roundness */
+    padding: 10px 15px;
+    outline: none; /* Remove default focus outline */
+    font-size: 16px; /* Improve readability */
+    transition: background-color 0.4s ease; /* Smooth hover effect */
+}
+
+#search:hover:hover{
+    background-color: transparent; /* Make background fully transparent */
+    color:white; /* Optional: Change text color for contrast */
+}
+
+#search{
+    background-color: darkolivegreen;
+    width: 200px;
+}
+
+#carouselExampleFade {
+    width: 75%; 
+    margin: 0 auto;
+    
+    
+  }
+
+  .carousel-item img{
+    height: 500px;
+  }
+
+  #button1:hover{
+   background-color: #00CED1;
+  }
+
+  
+#button:hover{
+    border-color: #007bff; /* Optional: Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional: Add a glow effect */
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white; /* Text color */
+    border: 2px solid #ccc; /* Optional: Add a border */
+    border-radius: 30px; /* Adjust for desired roundness */
+    padding: 10px 10px;
+    outline: none; /* Remove default focus outline */
+    font-size: 16px; /* Improve readability */
+   
+}
+
+#button
+{
+ border: 2px solid #ccc; /* Optional: Add a border */
+    border-radius: 30px; /* Adjust for desired roundness */
+    padding: 10px 10px;
+    outline: none; /* Remove default focus outline */
+    font-size: 16px; /* Improve readability */
+    width: 350px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+  transition: background-color 0.5s ease-in-out;
+}
+  
+
+.app_section{
+background-image: url(https://themewagon.github.io/delfood/images/app-bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 225px 0 175px 0;
+    color: #ffffff;
+}
+
+#carouselExampleFade img {
+    max-height: 500px;
+    object-fit: cover;
+  }
+
+
