@@ -4,213 +4,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HOME</title>
+  <title>Responsive Home</title>
   <link rel="stylesheet" href="./grp-5.css">
 
-  <!-- bootstrap cdn link -->
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-  <!-- for javascript cdn -->
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-
-  <!-- font awesome cdn link -->
-
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-  <!-- goolge font cdn link -->
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Danfo&family=Kablammo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
-    rel="stylesheet">
-
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <section>
-    <div id="section-1">
+  <!-- Section 1 -->
+  <section id="section-1" class="d-flex flex-column justify-content-center align-items-center text-center">
+    <h1 id="heading">DISCOVER RESTAURANT AND FOOD</h1>
+    <p class="fs-5 text-light w-75 mx-auto">
+      Discovering foods and restaurants is an exciting journey of taste and culture. It lets you explore diverse cuisines, uncover hidden gems, and savor culinary masterpieces.
+    </p>
+    <form class="row g-3 justify-content-center mt-4">
+      <div class="col-12 col-md-4">
+        <input type="text" class="form-control rounded-pill" placeholder="Restaurant Name" id="rest-name">
+      </div>
+      <div class="col-12 col-md-4">
+        <input type="text" class="form-control rounded-pill" placeholder="All Locations" id="all-local">
+      </div>
+      <div class="col-12 col-md-2">
+        <button type="submit" class="btn btn-primary w-100 rounded-pill" id="search">Search</button>
+      </div>
+    </form>
+  </section>
 
-      <div class="pt-5"></div>
-
-      <div class="container-fluid text-center mt-5">
-        <h1 id="heading" class="">DISCOVER RESTAURENT AND FOOD</h1>
-
-        <p class="fs-4 w-50 mx-auto">Discovering foods and restaurants is an exciting journey of taste and culture. It
-          lets you explore diverse cuisines, uncover hidden gems, and savor culinary masterpieces. Whether through food
-          apps, word of mouth, or spontaneous visits, it enriches your palate and deepens your love for the art of food.
-        </p>
-        <div class="mt-5"></div>
-
-        <form action="">
-
-          <input type="text" class="me-2" placeholder="Restaurent Name" name="" id="rest-name">
-          <input type="text" class="" placeholder="All Locations" name="" id="all-local">
-          <button class="" id="search">Search</button>
-        </form>
-
-
-        <!-- carousal -->
-        <!-- Carousel Section -->
-        <section>
-          <div class="container mt-5">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="./media/pexels-janetrangdoan-793785.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="./media/pexels-chanwalrus-958546.jpg" class="d-block w-100" alt="...">
-                </div>
-                <!-- Add more carousel items as needed -->
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-              </button>
-            </div>
+  <!-- Carousel Section -->
+  <section class="py-5">
+    <div class="container">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./media/pexels-janetrangdoan-793785.jpg" class="d-block w-100" alt="Slide 1">
           </div>
-        </section>
+          <div class="carousel-item">
+            <img src="./media/pexels-chanwalrus-958546.jpg" class="d-block w-100" alt="Slide 2">
+          </div>
+        </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span class="carousel-control-prev-icon"></span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span class="carousel-control-next-icon"></span>
         </button>
       </div>
     </div>
-    <div class="mt-5"></div>
-    <div class="pt-5"></div>
-    </div>
-    </div>
   </section>
 
-  <div class="mt-5"></div>
-  <div class="pt-5"></div>
-  <div class="mt-5"></div>
-  <div class="pt-5"></div>
-  <div class="pt-5"></div>
-  <div class="pt-5"></div>
-  <div class="pt-5"></div>
-
-  <section>
-    <div>
-
-      <div>
-
-        <h1 id="heading" class="text-center container-fluid mt-5  pt-5">
-          <hr><u>OUR POPULAR RECIPES</u>
-        </h1>
-        <div class="pt-5"></div>
-
-        <div id="#cards" class="container-fluid">
-          <div class="ms-5">
-            <div class="row container-fluid ms-5 ps-2 text-center">
-              <div class="col-sm-12 col-md-4">
-                <!-- first card -->
-
-                <div class="card bg-primary bg-dark text-white rounded-5" style="width: 18rem;">
-                  <img class="img-fluid rounded-5" src="./media/pexels-jjagtenberg-103124.jpg" class="card-img-top"
-                    alt="...">
-                  <div class="card-body">
-                    <h5 id="heading" class="card-title fw-4">BREAKFAST</h5>
-                    <p class="card-text">Breakfast is the day's first meal, fueling energy and focus after fasting
-                      overnight.</p>
-                    <a href="./breakfast.html" id="button1" class="btn btn-primary bg-warning text-black">Go
-                      somewhere</a>
-                  </div>
-                </div>
-              </div>
-              <!-- second Card -->
-              <div class="col-sm-12 col-md-4">
-                <div class="card bg-dark text-white rounded-5" style="width: 18rem;">
-                  <img class="img-fluid rounded-5" src="./media/pexels-shouravsheikh-5695615.jpg" class="card-img-top"
-                    alt="...">
-                  <div class="card-body">
-                    <h5 id="heading" class="card-title">LUNCH</h5>
-                    <p class="card-text">Lunch is a midday meal that provides energy and nutrients to sustain the body
-                      through the afternoon.</p>
-                    <a href="./lunch.html" id="button1" class="btn btn-primary bg-warning text-black">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- THIRD CARD -->
-              <div class="col-sm-12 col-md-4">
-                <div class="card bg-dark text-white rounded-5" style="width: 18rem;">
-                  <img class="img-fluid rounded-5" src="./media/pexels-jerchung-2116094.jpg" class="card-img-top"
-                    alt="...">
-                  <div class="card-body">
-                    <h5 id="heading" class="card-title">DINNER</h5>
-                    <p class="card-text">Dinner is the evening meal, offering nourishment and energy to end the day.</p>
-                    <a href="./dinner.html" id="button1" class="btn btn-primary bg-warning text-black">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mt-5"></div>
-        <div class="text-center">
-          <button class="text-center" id="button">Order Now</button>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <section class="app_section">
+  <!-- Cards Section -->
+  <section class="py-5 bg-light">
     <div class="container">
-      <div class="col-md-9 mx-auto">
-        <div class="row">
-          <div class="col-md-7 col-lg-8">
-            <div class="detail-box">
-              <h2 id="heading">
-                <span> Get the</span> <br>
-                Dinedrop App
-              </h2>
-              <p class="mt-3">
-                Craving your favorite meals? Look no further! Our app brings delicious food from your favorite
-                restaurants straight to your doorstep. Explore a wide variety of cuisines, enjoy seamless ordering, and
-                track your delivery in real-time. Whether it’s a quick snack or a hearty feast, we’ve got you covered!
-                Experience the joy of hassle-free food ordering—download now and satisfy your cravings! 🌟
-              </p>
-              <div class="app_btn_box ">
-                <a href="" class="">
-                  <img class="" src="./media/ukraine-kropyvnytskyi-april-26-2023-260nw-2293917457-removebg-preview.png"
-                    width="300px" height="80px" class="box-img" alt="">
-                </a>
-
-              </div>
-              <a href="" class="download_btn mb-1"><button id="button">Download Now</button>
-              </a>
+      <h2 id="heading" class="text-center mb-5">OUR POPULAR RECIPES</h2>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-12 col-md-4">
+          <div class="card bg-dark text-white">
+            <img src="./media/pexels-jjagtenberg-103124.jpg" class="card-img-top img-fluid" alt="Breakfast">
+            <div class="card-body text-center">
+              <h5 class="card-title">BREAKFAST</h5>
+              <p class="card-text">Start your day with energy and focus with our breakfast recipes.</p>
+              <a href="./breakfast.html" class="btn btn-warning">Explore</a>
             </div>
           </div>
-          <div class="col-md-5 col-lg-4">
-            <div class="img-box">
-              <img src="https://themewagon.github.io/delfood/images/mobile.png" class="box-img" alt="">
+        </div>
+        <!-- Card 2 -->
+        <div class="col-12 col-md-4">
+          <div class="card bg-dark text-white">
+            <img src="./media/pexels-shouravsheikh-5695615.jpg" class="card-img-top img-fluid" alt="Lunch">
+            <div class="card-body text-center">
+              <h5 class="card-title">LUNCH</h5>
+              <p class="card-text">Enjoy delicious and nourishing meals for your midday break.</p>
+              <a href="./lunch.html" class="btn btn-warning">Explore</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-12 col-md-4">
+          <div class="card bg-dark text-white">
+            <img src="./media/pexels-jerchung-2116094.jpg" class="card-img-top img-fluid" alt="Dinner">
+            <div class="card-body text-center">
+              <h5 class="card-title">DINNER</h5>
+              <p class="card-text">Wind down your day with our nourishing dinner recipes.</p>
+              <a href="./dinner.html" class="btn btn-warning">Explore</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </section>
 
+  <!-- App Section -->
+  <section class="app_section text-center text-white py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h2 id="heading">Get the Dinedrop App</h2>
+          <p class="my-4">Download our app to enjoy seamless food ordering from your favorite restaurants!</p>
+          <a href="#" class="btn btn-primary">Download Now</a>
+        </div>
+        <div class="col-lg-5">
+          <img src="https://themewagon.github.io/delfood/images/mobile.png" class="img-fluid" alt="App Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
