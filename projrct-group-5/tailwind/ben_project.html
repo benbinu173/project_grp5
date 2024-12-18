@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Background with Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./ben_project.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-blue-900 text-white min-h-screen flex items-center justify-center">
+    <!-- Background Container -->
+    <div class="h-screen w-full bg-cover bg-center bg-no-repeat flex items-center justify-center text-white"
+        style="background-image: url('./media_tail/3227823.jpg');
+        height: 150vh;">
+        <div class="text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 hover-glow transition duration-300">Here’s a sneak peek at
+                the event schedule, get ready to plan your day and make sure you catch every unforgettable moment! </h1>
+            <p class="text-lg md:text-2xl hover-glow transition duration-300">Get ready for an unforgettable journey
+                through music</p>
+
+            <!-- Table Container centered -->
+            <div class="flex justify-center items-center w-full mt-8">
+                <div class="w-full max-w-4xl">
+
+                    <!-- Table with transparent background -->
+                    <div class="overflow-x-auto shadow-lg rounded-lg bg-transparent">
+                        <table class="min-w-full table-auto text-center bg-transparent text-white">
+                            <thead>
+                                <tr class="border-b-2 border-gray-400">
+                                    <th class=" text1 px-6 py-3 text-4xl font-semibold">Time</th>
+                                    <th class=" text1 px-6 py-3 text-4xl font-semibold">Performer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-600 hover:bg-blue-700">
+                                    <td class=" text1 px-6 py-4">6:00 PM</td>
+                                    <td class="px-6 py-4">Opening Act</td>
+                                </tr>
+                                <tr class="border-b border-gray-600 hover:bg-blue-700">
+                                    <td class="text1 px-6 py-4">7:30 PM</td>
+                                    <td  class="px-6 py-4"> <a href="https://www.google.com/search?q=travis+scott&rlz=1C1VDKB_enIN1130IN1132&oq=travis+scott&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyDwgBEC4YQxixAxiABBiKBTIMCAIQABhDGIAEGIoFMgcIAxAAGIAEMgoIBBAAGLEDGIAEMgoIBRAAGLEDGIAEMgoIBhAAGLEDGIAEMgcIBxAAGIAEMgoICBAAGLEDGIAEMgcICRAAGI8C0gEINzkyMGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8">
+                                        Travis Scott</a> </td>
+                                </tr>
+                                <tr class="border-b border-gray-600 hover:bg-blue-700">
+                                    <td class=" text1 px-6 py-4">9:00 PM</td>
+                                    <td class="px-6 py-4"><a href="https://www.google.com/search?q=billie+eilish&sca_esv=48a32a8a53a0fe13&rlz=1C1VDKB_enIN1130IN1132&sxsrf=ADLYWILhEydEyPvt-q9QSz672z3zOjizXA%3A1734422171276&ei=my5hZ4irEKyV4-EP-8KOqQQ&gs_ssp=eJzj4tVP1zc0TDY3rSxILy82YPTiTcrMyclMVUjNzMkszgAAjvcJ3w&oq=BILLIE+&gs_lp=Egxnd3Mtd2l6LXNlcnAiB0JJTExJRSAqAggAMg0QLhiABBixAxhDGIoFMgoQABiABBhDGIoFMgoQLhiABBhDGIoFMg0QABiABBixAxhDGIoFMgoQABiABBhDGIoFMhAQLhiABBixAxhDGIMBGIoFMggQABiABBixAzIIEAAYgAQYsQMyChAAGIAEGEMYigUyCBAAGIAEGLEDMhwQLhiABBixAxhDGIoFGJcFGNwEGN4EGN8E2AEBSIcQUABY_wZwAHgBkAEBmAGSA6AB2w2qAQkwLjQuMC4yLjG4AQPIAQD4AQGYAgagAtELwgIKECMYgAQYJxiKBcICBRAuGIAEwgIOEC4YgAQYsQMYgwEYigXCAggQLhiABBixA8ICGRAuGIAEGEMYigUYlwUY3AQY3gQY3wTYAQHCAgUQABiABJgDALoGBggBEAEYFJIHCTAuMy4xLjEuMaAHk8cB&sclient=gws-wiz-serp">Billie Eilish</a> </td>
+                                </tr>
+                                <tr class="border-b border-gray-600 hover:bg-blue-700">
+                                    <td class="text1 px-6 py-4">10:30 PM</td>
+                                    <td class="px-6 py-4"><a href="https://www.google.com/search?q=taylor+swift&sca_esv=48a32a8a53a0fe13&rlz=1C1VDKB_enIN1130IN1132&sxsrf=ADLYWILhEydEyPvt-q9QSz672z3zOjizXA%3A1734422171276&ei=my5hZ4irEKyV4-EP-8KOqQQ&gs_ssp=eJzj4tTP1TdIyTE1Mzdg9OIpSazMyS9SKC7PTCsBAF0FB_A&oq=TAYLOR+&gs_lp=Egxnd3Mtd2l6LXNlcnAiB1RBWUxPUiAqAggAMhAQLhiABBixAxhDGMkDGIoFMgsQABiABBiSAxiKBTINEAAYgAQYsQMYQxiKBTINEAAYgAQYsQMYQxiKBTINEAAYgAQYsQMYQxiKBTINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTINEC4YgAQYsQMYQxiKBTIKEC4YgAQYQxiKBTIfEC4YgAQYsQMYQxjJAxiKBRiXBRjcBBjeBBjgBNgBAUi3FlAAWLcOcAF4AJABAJgBmAKgAfoJqgEFMC43LjG4AQPIAQD4AQGYAgqgApyGAsICEBAuGIAEGLEDGEMYgwEYigXCAggQABiABBixA8ICHBAuGIAEGLEDGEMYigUYlwUY3AQY3gQY3wTYAQHCAgoQIxiABBgnGIoFwgIZEC4YgAQYQxiKBRiXBRjcBBjeBBjfBNgBAcICDRAuGIAEGEMY5QQYigXCAggQLhiABBixA8ICEBAAGIAEGLEDGEMYgwEYigXCAg4QLhiABBixAxiDARiKBcICBRAAGIAEwgIcEC4YgAQYQxjlBBiKBRiXBRjcBBjeBBjgBNgBAcICDRAuGIAEGEMY1AIYigWYAwC6BgYIARABGBSSBwkxLjcuMS45LTGgB8eRAQ&sclient=gws-wiz-serp">Taylor Swift</a> </td>
+                                </tr>
+                                <tr class="hover:bg-blue-700">
+                                    <td class=" text1 px-6 py-4">12:30 PM</td>
+                                    <td class="px-6 py-4"><a href="https://www.google.com/search?q=kendrick+lamar&sca_esv=48a32a8a53a0fe13&rlz=1C1VDKB_enIN1130IN1132&sxsrf=ADLYWIJ9rI64fkJwz-dyfINp2mACI7Enxg%3A1734422318095&ei=Li9hZ4a1BYWX4-EP59jUoQc&gs_ssp=eJzj4tLP1TdIt6wws7QwYPTiy07NSynKTM5WyEnMTSwCAHT9CNA&oq=kendrick&gs_lp=Egxnd3Mtd2l6LXNlcnAiCGtlbmRyaWNrKgIIADINEC4YgAQYsQMYQxiKBTIKEC4YgAQYQxiKBTIQEAAYgAQYsQMYQxiDARiKBTINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTIKEC4YgAQYQxiKBTIQEAAYgAQYsQMYQxiDARiKBTIKEAAYgAQYQxiKBTIIEAAYgAQYsQMyChAAGIAEGEMYigUyHBAuGIAEGLEDGEMYigUYlwUY3AQY3gQY3wTYAQFI6xRQAFjECnAAeAGQAQCYAawHoAHtHaoBDTAuMS4xLjIuMS4xLjK4AQPIAQD4AQGYAgigAr8ewgIEECMYJ8ICChAjGIAEGCcYigXCAgsQABiABBixAxiDAcICDhAAGIAEGLEDGIMBGIoFwgIZEC4YgAQYQxiKBRiXBRjcBBjeBBjfBNgBAcICBRAAGIAEmAMAugYGCAEQARgUkgcLMi0yLjIuMi4wLjKgB67NAQ&sclient=gws-wiz-serp">Grand Finale - Kendrick Lamar
+                                    </a> 
+                                     </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+                <div class="pt-20"></div>
+
+            <div class="text-4xl md:text-4xl font-bold mb-4  hover-glow transition duration-300">
+                <p>GET READY TO IMMERSE YOURSELF IN</p>
+                <p>EXTRAORDINARY MUSICAL EXPERIENCE</p>
+            </div>
+            
+            <div class="mt-4 text-center "><a href="./book.html"><button>BOOK TICKETS</button></a></div>
+
+        </div>
+    
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+
+   
+  
+      .hover-glow:hover {
+        text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #4c6ef5, 0 0 40px #4c6ef5;
+       color: black;
+      }
+
+.text1{
+    color: aqua;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  padding: 10px 20px; /* Adds padding for better spacing */
+  border: 2px solid aqua; /* Aqua border */
+  background-color: transparent; /* Transparent background */
+  color: aqua; /* Text color */
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer; /* Changes cursor to pointer */
+  text-align: center; /* Centers text */
+  display: inline-block; /* Ensures proper centering within the div */
+  border-radius: 5px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: aqua; /* Changes background color on hover */
+  color: black; /* Changes text color on hover */
+  transform: scale(1.05); /* Slightly increases size on hover */
+}

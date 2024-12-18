@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Tickets</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-cover bg-center min-h-screen flex items-center justify-center" style="background-image: url('./media_tail/top-view-picnic-arrangement-with-copy-space.jpg');">
+  <div class="bg-white  p-8 rounded-lg shadow-lg w-full max-w-lg">
+    <h1 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-6">Book Your Tickets</h1>
+    <form action="confirmation.html"  class="space-y-4">
+      <!-- Full Name -->
+      <div>
+        <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" 
+               class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg ">
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" 
+               class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg ">
+      </div>
+
+      <!-- Phone -->
+      <div>
+        <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone number" 
+               class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg ">
+      </div>
+
+      <!-- Number of Tickets -->
+      <div>
+        <label for="tickets" class="block text-sm font-medium text-gray-700">Number of Tickets</label>
+        <select id="tickets" name="tickets" 
+                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg ">
+          <option value="" disabled selected>Select number of tickets</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+      <!-- Special Requests -->
+      <div>
+        <label for="requests" class="block text-sm font-medium text-gray-700">Special Requests (Optional)</label>
+        <textarea id="requests" name="requests" placeholder="Enter any special requests..." 
+                  class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg "></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div>
+        <button type="submit" 
+                class="w-full px-4 py-2 bg-aqua text-white font-semibold text-lg rounded-lg hover:bg-blue-500  transition">
+          Submit Booking
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
